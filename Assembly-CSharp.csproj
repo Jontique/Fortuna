@@ -53,11 +53,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\Backend.cs" />
+     <Compile Include="Assets\Scripts\Backend.cs" />
      <Compile Include="Assets\Scripts\LaunchBall.cs" />
      <Compile Include="Assets\Scripts\LaunchProjectile.cs" />
-     <None Include="Assets\Drivers\unity-mongo-csharp-driver-1.11.0\Debug\MongoDB.Bson.xml" />
-     <None Include="Assets\Drivers\unity-mongo-csharp-driver-1.11.0\Release\MongoDB.Bson.xml" />
+     <None Include="Assets\Drivers\unity-mongo-csharp-driver-1.11.0-release\MongoDB.Bson.xml" />
  <Reference Include="UnityEditor.StandardEvents">
  <HintPath>C:/xugdrive/school/fortuna/Fortuna/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
  </Reference>
@@ -281,16 +280,10 @@
  <HintPath>C:/Users/xug/AppData/Local/Unity/cache/packages/packages.unity.com/com.unity.standardevents@1.0.13/UnityEngine.StandardEvents.dll</HintPath>
  </Reference>
  <Reference Include="MongoDB.Bson">
- <HintPath>C:/xugdrive/school/fortuna/Fortuna/Assets/Drivers/unity-mongo-csharp-driver-1.11.0/Release/MongoDB.Bson.dll</HintPath>
+ <HintPath>C:/xugdrive/school/fortuna/Fortuna/Assets/Drivers/unity-mongo-csharp-driver-1.11.0-release/MongoDB.Bson.dll</HintPath>
  </Reference>
  <Reference Include="MongoDB.Driver">
- <HintPath>C:/xugdrive/school/fortuna/Fortuna/Assets/Drivers/unity-mongo-csharp-driver-1.11.0/Release/MongoDB.Driver.dll</HintPath>
- </Reference>
- <Reference Include="MongoDB.Driver">
- <HintPath>C:/xugdrive/school/fortuna/Fortuna/Assets/Drivers/unity-mongo-csharp-driver-1.11.0/Debug/MongoDB.Driver.dll</HintPath>
- </Reference>
- <Reference Include="MongoDB.Bson">
- <HintPath>C:/xugdrive/school/fortuna/Fortuna/Assets/Drivers/unity-mongo-csharp-driver-1.11.0/Debug/MongoDB.Bson.dll</HintPath>
+ <HintPath>C:/xugdrive/school/fortuna/Fortuna/Assets/Drivers/unity-mongo-csharp-driver-1.11.0-release/MongoDB.Driver.dll</HintPath>
  </Reference>
  <Reference Include="mscorlib">
  <HintPath>C:/Program Files/Unity/Editor/Data/MonoBleedingEdge/lib/mono/unity/mscorlib.dll</HintPath>
