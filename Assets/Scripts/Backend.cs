@@ -9,9 +9,13 @@ using MongoDB.Bson.Serialization.Attributes;
 public class Backend : MonoBehaviour {
 
 	public bool ConnectedToDB = false;
-
-
-
+	public bool BackendActive = true;
+	
+	private MongoClient client;
+	private MongoServer server;
+	private MongoDatabase db;
+	private MongoCollection<Order> orders;
+	
 	void Start () {
 		
 	}
