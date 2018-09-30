@@ -29,6 +29,7 @@ public class BallBehaviour : MonoBehaviour {
 
 
     public float ballMaxSpeed = 25f; //TODO: adjust to fit the game physics
+    public float maxDragDistance = 4.5f;
     [SerializeField]
     private float launchPowerMultiplier;
 
@@ -47,12 +48,15 @@ public class BallBehaviour : MonoBehaviour {
 
     void Update()
     {
+
+        //print((int)rb.velocity.x +" " + (int)rb.velocity.y);
         if (CheckIfStopped()) //if ball stopped
         {
             if (ballOutOfSpawn)
             {
                 //print("ball out");
-               //launch = true;
+                //launch = true;
+               // LimitBallSpeed(rb.velocity.x, rb.velocity.y);
                 gm.NextBall();
                 ZeroPositions();
             }
@@ -67,10 +71,7 @@ public class BallBehaviour : MonoBehaviour {
         }
 
 
-        if (ballOutOfSpawn)
-        {
-            LimitBallSpeed(rb.velocity.x, rb.velocity.y);
-        }
+        LimitBallSpeed(rb.velocity.x, rb.velocity.y);
 
 
         if(canLaunch)
@@ -124,7 +125,7 @@ public class BallBehaviour : MonoBehaviour {
 
 
         public void LimitBallSpeed(float vel_x, float vel_y)
-    {
+        {
         if(vel_x > ballMaxSpeed)
         {
             rb.velocity = new Vector3(ballMaxSpeed, rb.velocity.y);
@@ -134,7 +135,7 @@ public class BallBehaviour : MonoBehaviour {
         if (vel_y > ballMaxSpeed)
         {
             rb.velocity = new Vector3(rb.velocity.x, ballMaxSpeed);
-           // print("y speed limited");
+           //print("y speed limited");
         }
     }
 
@@ -143,10 +144,16 @@ public class BallBehaviour : MonoBehaviour {
 
         //use fuuuuucking advanced elementary school mathematics to magnify the launch power. you won't believe how advanced this shit is
 
-        float distance = (Mathf.Sqrt(Mathf.Pow((dragEnd.x - dragStart.x), 2f) + (Mathf.Pow((dragEnd.y - dragStart.y), 2f)))); //accepting x 
-                                                                                                                                //coordinate input as well
+        float distance = Mathf.Abs(Mathf.Sqrt(Mathf.Pow((dragEnd.x - dragStart.x), 2f) + (Mathf.Pow((dragEnd.y - dragStart.y), 2f)))); //accepting x 
+                                                                                                                              //coordinate input as well
+        //print("dis = " + distance);
+        if(distance > maxDragDistance)
+        {
+            distance = maxDragDistance;
+        }
 
-        Vector3 launchVector = new Vector3(0, distance * launchPowerMultiplier, 0); //see I fukkin told ya 8)
+        Vector3 launchVector = new Vector3(0, (distance * launchPowerMultiplier), 0); //see I fukkin told ya 8)
+        //print("lv = " + launchVector);
 
         return launchVector;
     }

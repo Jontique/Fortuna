@@ -61,17 +61,21 @@ public class GameManager : MonoBehaviour {
     public void NextBall()
     {
         balls[activeBall].GetComponent<BallBehaviour>().enabled = false; //disables the controls of previous ball
-        if (activeBall < 5)
+        if (activeBall <= 4)
         {
             ++activeBall;
             balls[activeBall].transform.position = launchPos;
             balls[activeBall].GetComponent<BallBehaviour>().enabled = true;
         }
 
-        if(activeBall >= 5)
-        {
+        else
             print("game over");
-        }
+    }
+
+    public GameObject GetActiveBall()
+    {
+
+        return balls[activeBall];
     }
 
 }
