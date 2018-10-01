@@ -13,23 +13,26 @@ public class BallBehaviour : MonoBehaviour {
     public Vector3 tempPos;
 
     public Rigidbody rb;
+    private SphereCollider sphereCollider;
+    private MeshRenderer meshRend;
 
     public GameObject aimMarker;
     private GameObject dot;
     public GameManager gm;
-   // private SphereCollider sphereCol;
+    // private SphereCollider sphereCol;
 
-
+    public bool collidedToTop = false;
     private bool canLaunch = false;
     private bool mouseHeldDown = false;
-    public bool collidedToTop = false;
     private bool mouseHasBeenDragged = false;
     private bool ballOutOfSpawn = false;
     private bool failedLaunch = false;
+    private bool stayInHole = false;
 
 
     public float ballMaxSpeed = 25f; //TODO: adjust to fit the game physics
     public float maxDragDistance = 4.5f;
+    public float combinedSpeed;
     [SerializeField]
     private float launchPowerMultiplier;
 
@@ -37,12 +40,14 @@ public class BallBehaviour : MonoBehaviour {
     {
         launcher = gameObject.GetComponent<LaunchBall>();
         rb = gameObject.GetComponent<Rigidbody>();
-        //sphereCol = gameObject.GetComponent<SphereCollider>();
+        sphereCollider = gameObject.GetComponent<SphereCollider>();
+        meshRend = gameObject.GetComponent<MeshRenderer>();
         mouseHeldDown = false;
         if(!gm)
         {
             gm = GameObject.Find("GameManager").GetComponent<GameManager>();
         }
+
     }
 
 
@@ -72,6 +77,8 @@ public class BallBehaviour : MonoBehaviour {
 
 
         LimitBallSpeed(rb.velocity.x, rb.velocity.y);
+        combinedSpeed = rb.velocity.x + rb.velocity.y;
+       // clampedSpeed = Mathf.Clamp(combinedSpeed, 0.1f, 10.0f);
 
 
         if(canLaunch)
@@ -182,12 +189,29 @@ public class BallBehaviour : MonoBehaviour {
             failedLaunch = true;
             canLaunch = true;
            // print("bottom enter");
-
         }
         if (other.name == "LaunchChecker")
         {
             ballOutOfSpawn = false;
             canLaunch = false;
+        }
+        if(other.tag == "RedHole") //when hitting the edge of the red hole, use rng and the current speed to see if player can stay in the hole
+        {
+            stayInHole = other.gameObject.GetComponent<RedHole>().CheckHoleStay(combinedSpeed);
+           // print("hit hole");
+        }
+        if(other.tag == "RedHoleCenter")
+        {
+            if(stayInHole) // if the player hits the center of the orb it uses the previous rng to determine if ball should stay in
+            {
+                rb.velocity = Vector3.zero;
+                rb.constraints = RigidbodyConstraints.FreezeAll;
+                meshRend.material.color = new Color(1f, 1f, 1f, 0.25f);
+                gameObject.transform.position = other.transform.position;
+                gm.currentScore += other.gameObject.GetComponent<RedHole>().score;
+                gm.NextBall();
+                ZeroPositions();
+            }
         }
 
     }
