@@ -6,6 +6,7 @@ TagManager:
   tags:
   - RedHole
   - RedHoleCenter
+  - ScoreTrigger
   layers:
   - Default
   - TransparentFX

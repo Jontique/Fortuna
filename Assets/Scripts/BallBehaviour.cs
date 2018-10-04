@@ -204,12 +204,14 @@ public class BallBehaviour : MonoBehaviour {
         {
             if(stayInHole) // if the player hits the center of the orb it uses the previous rng to determine if ball should stay in
             {
+               
                 rb.velocity = Vector3.zero;
                 rb.constraints = RigidbodyConstraints.FreezeAll;
-                meshRend.material.color = new Color(1f, 1f, 1f, 0.25f);
+                meshRend.material.color = new Color(0.5f, 0.5f, 0.5f, 0.25f);
                 gameObject.transform.position = other.transform.position;
-                gm.currentScore += other.gameObject.GetComponent<RedHole>().score;
-                gm.NextBall();
+                sphereCollider.enabled = false;
+                gm.currentScore += other.GetComponentInParent<RedHole>().score;
+               // gm.NextBall();
                 ZeroPositions();
             }
         }
@@ -244,6 +246,19 @@ public class BallBehaviour : MonoBehaviour {
             canLaunch = true;
            // print("bottom stay");
 
+        }
+        if(other.tag == "ScoreTrigger")
+        {
+            if (CheckIfStopped()) { 
+                print("in: " + other.name);
+                rb.velocity = Vector3.zero;
+                rb.constraints = RigidbodyConstraints.FreezeAll;
+                meshRend.material.color = new Color(0.5f, 0.5f, 0.5f, 0.25f);
+                gm.currentScore += other.GetComponent<ScoreTrigger>().score;
+                gm.NextBall();
+                ZeroPositions();
+                sphereCollider.enabled = false;
+            }
         }
     }
 

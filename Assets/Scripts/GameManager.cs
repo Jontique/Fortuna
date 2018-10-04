@@ -10,6 +10,7 @@ public class GameManager : MonoBehaviour {
 
     public int activeBall;
     public int currentScore = 0;
+    public int totalScore = 0;
     public GameObject ball;
     public GameObject[] balls;
     public GameObject launchSpawn;
@@ -36,7 +37,10 @@ public class GameManager : MonoBehaviour {
             backEnd = GameObject.Find("Backend");
     }
 
-
+    private void Update()
+    {
+        print("score = " + currentScore);
+    }
 
     private void SpawnBalls()
     {
@@ -58,8 +62,9 @@ public class GameManager : MonoBehaviour {
 
     public void NextBall()
     {
+        print("next ball");
         balls[activeBall].GetComponent<BallBehaviour>().enabled = false; //disables the controls of previous ball
-        if (activeBall <= 4)
+        if (activeBall < 4)
         {
             ++activeBall;
             balls[activeBall].transform.position = launchPos;
@@ -73,8 +78,9 @@ public class GameManager : MonoBehaviour {
 
     public void GameOver()
     {
-        //backend.submitScore(currentScore);
-        print("game over");
+        totalScore = currentScore;
+        //backend.submitScore(totalScore);
+        print("game over, score: " + totalScore);
 
     }
 
