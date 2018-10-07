@@ -50,11 +50,17 @@ public class Backend : MonoBehaviour {
 	public List<User> GetTop(int count)
 	{
 		List<User> result = new List<User>();
+		int userCount;
 		try
 		{
 			var sortBy = SortBy.Descending("Value");
 			if(count<1) throw new Exception();
 			MongoCursor<User> topUsers = users.FindAll().SetSortOrder(sortBy).SetLimit(count);
+			foreach(User u in topUsers)
+			{
+				result.Add(u);
+				++userCount;
+			}
 		}
 		catch(Exception e)
 		{
