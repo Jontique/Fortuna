@@ -255,7 +255,7 @@ public class BallBehaviour : MonoBehaviour {
                 rb.constraints = RigidbodyConstraints.FreezeAll;
                 meshRend.material.color = new Color(0.5f, 0.5f, 0.5f, 0.25f);
                 gm.currentScore += other.GetComponent<ScoreTrigger>().score;
-                gm.NextBall();
+               // gm.NextBall();
                 ZeroPositions();
                 sphereCollider.enabled = false;
             }

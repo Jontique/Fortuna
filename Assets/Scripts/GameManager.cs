@@ -14,8 +14,8 @@ public class GameManager : MonoBehaviour {
     public GameObject ball;
     public GameObject[] balls;
     public GameObject launchSpawn;
-    public GameObject backEnd;
-
+    public GameObject backEndObject;
+    private Backend backEnd;
 
     private Vector3 launchPos;
 
@@ -33,8 +33,9 @@ public class GameManager : MonoBehaviour {
             launchSpawn = GameObject.Find("BallLaunchPos");
         activeBall = 0;
         launchPos = launchSpawn.transform.position;
-        if (!backEnd)
-            backEnd = GameObject.Find("Backend");
+        if (!backEndObject)
+            backEndObject = GameObject.Find("Backend");
+        backEnd = backEndObject.GetComponent<Backend>();
     }
 
     private void Update()
@@ -79,7 +80,7 @@ public class GameManager : MonoBehaviour {
     public void GameOver()
     {
         totalScore = currentScore;
-        //backend.submitScore(totalScore);
+        backEnd.SubmitScore("aaa", totalScore);
         print("game over, score: " + totalScore);
 
     }

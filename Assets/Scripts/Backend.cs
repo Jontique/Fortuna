@@ -50,7 +50,7 @@ public class Backend : MonoBehaviour {
 	public List<User> GetTop(int count)
 	{
 		List<User> result = new List<User>();
-		int userCount;
+		int userCount = 0;
 		try
 		{
 			var sortBy = SortBy.Descending("Value");
@@ -59,7 +59,7 @@ public class Backend : MonoBehaviour {
 			foreach(User u in topUsers)
 			{
 				result.Add(u);
-				++userCount;
+                ++userCount;
 			}
 		}
 		catch(Exception e)
