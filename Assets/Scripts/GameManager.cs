@@ -11,6 +11,8 @@ public class GameManager : MonoBehaviour {
     public int activeBall;
     public int currentScore = 0;
     public int totalScore = 0;
+    public string playerName;
+    public StartGame gameStarter;
     public GameObject ball;
     public GameObject[] balls;
     public GameObject launchSpawn;
@@ -29,6 +31,10 @@ public class GameManager : MonoBehaviour {
 
     private void Start()
     {
+        if (!gameStarter)
+            gameStarter = GameObject.Find("GameStarter").GetComponent<StartGame>();
+        playerName = gameStarter.playerName;
+        
         if (!launchSpawn)
             launchSpawn = GameObject.Find("BallLaunchPos");
         activeBall = 0;
@@ -80,7 +86,7 @@ public class GameManager : MonoBehaviour {
     public void GameOver()
     {
         totalScore = currentScore;
-        backEnd.SubmitScore("aaa", totalScore);
+        backEnd.SubmitScore(playerName, totalScore);
         print("game over, score: " + totalScore);
 
     }

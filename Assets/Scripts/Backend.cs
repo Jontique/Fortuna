@@ -47,7 +47,13 @@ public class Backend : MonoBehaviour {
 	private MongoCollection<User> users;
 	private MongoCollection<Score> scores;
 
-	public List<User> GetTop(int count)
+
+    void Awake()
+    {
+        DontDestroyOnLoad(gameObject);
+    }
+
+    public List<User> GetTop(int count)
 	{
 		List<User> result = new List<User>();
 		int userCount = 0;
