@@ -61,9 +61,18 @@ public class BallBehaviour : MonoBehaviour {
             {
                 //print("ball out");
                 //launch = true;
-               // LimitBallSpeed(rb.velocity.x, rb.velocity.y);
-                gm.NextBall();
-                ZeroPositions();
+                // LimitBallSpeed(rb.velocity.x, rb.velocity.y);
+                if (gm.activeBall == 4)
+                {
+                    //ZeroPositions();
+                    gm.GameOver();
+                }
+                else
+                {
+                    gm.NextBall();
+                    ZeroPositions();
+                }
+
             }
             else
             {
@@ -211,8 +220,10 @@ public class BallBehaviour : MonoBehaviour {
                 gameObject.transform.position = other.transform.position;
                 sphereCollider.enabled = false;
                 gm.currentScore += other.GetComponentInParent<RedHole>().score;
+                gm.totalScore = gm.currentScore;
                // gm.NextBall();
-                ZeroPositions();
+
+
             }
         }
 
@@ -255,7 +266,8 @@ public class BallBehaviour : MonoBehaviour {
                 rb.constraints = RigidbodyConstraints.FreezeAll;
                 meshRend.material.color = new Color(0.5f, 0.5f, 0.5f, 0.25f);
                 gm.currentScore += other.GetComponent<ScoreTrigger>().score;
-               // gm.NextBall();
+                gm.totalScore = gm.currentScore;
+                // gm.NextBall();
                 ZeroPositions();
                 sphereCollider.enabled = false;
             }

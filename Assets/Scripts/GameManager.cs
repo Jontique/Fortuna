@@ -1,6 +1,8 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
+
 
 public class GameManager : MonoBehaviour {
 
@@ -17,6 +19,7 @@ public class GameManager : MonoBehaviour {
     public GameObject[] balls;
     public GameObject launchSpawn;
     public GameObject backEndObject;
+    public Text scoreText;
     private Backend backEnd;
 
     private Vector3 launchPos;
@@ -42,11 +45,14 @@ public class GameManager : MonoBehaviour {
         if (!backEndObject)
             backEndObject = GameObject.Find("Backend");
         backEnd = backEndObject.GetComponent<Backend>();
+        if (!scoreText)
+            scoreText = GameObject.Find("CurrentScoreText").GetComponent<Text>();
     }
 
     private void Update()
     {
-        print("score = " + currentScore);
+        //  print("score = " + currentScore);
+        scoreText.text = ("Score: " + currentScore.ToString());
     }
 
     private void SpawnBalls()
@@ -69,7 +75,7 @@ public class GameManager : MonoBehaviour {
 
     public void NextBall()
     {
-        print("next ball");
+       // print("next ball");
         balls[activeBall].GetComponent<BallBehaviour>().enabled = false; //disables the controls of previous ball
         if (activeBall < 4)
         {
@@ -79,7 +85,7 @@ public class GameManager : MonoBehaviour {
         }
 
         else
-            GameOver();
+            print("game end");
     }
 
 
@@ -93,7 +99,6 @@ public class GameManager : MonoBehaviour {
 
     public GameObject GetActiveBall()
     {
-
         return balls[activeBall];
     }
 

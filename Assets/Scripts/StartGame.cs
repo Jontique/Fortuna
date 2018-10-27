@@ -73,7 +73,7 @@ public class StartGame : MonoBehaviour {
         }
         else
         {
-            nameErrorText.text = "Please enter a name";
+            nameErrorText.text = "Please enter a name"; //changes the text from "" to the error
         }
     }
 
