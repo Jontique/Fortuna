@@ -7,7 +7,7 @@ using UnityEngine;
 using MongoDB.Driver.Builders;
 //using MongoDB.Driver.GridFS;
 //using MongoDB.Driver.Linq;
-
+//
 //using MongoDB.Bson.IO;
 //using MongoDB.Bson.Serialization;
 //using MongoDB.Bson.Serialization.Attributes;
@@ -17,12 +17,15 @@ using MongoDB.Driver.Builders;
 //using MongoDB.Bson.Serialization.Serializers;
 //using MongoDB.Driver.Wrappers;
 
-public class Score {
+public class Score
+{
+	public ObjectId _id { get; set; }
 	public int UserID { get; set; }
 	public int Value { get; set; }
 }
 
 public class User {
+	public ObjectId _id { get; set; }
 	public int UserID { get; set; }
 	public string Name { get; set; }
 	public int HighScore { get; set; }
@@ -44,8 +47,8 @@ public class Backend : MonoBehaviour {
 	private MongoClient mongoClient;
 	private MongoServer mongoServer;
 	private MongoDatabase database;
-	private MongoCollection<User> users;
-	private MongoCollection<Score> scores;
+	private MongoCollection<User> users = null;
+	private MongoCollection<Score> scores = null;
 
 
     void Awake()
@@ -55,86 +58,56 @@ public class Backend : MonoBehaviour {
 
     public List<User> GetTop(int count)
 	{
+		if(ConnectedToDB == false) return null;
 		List<User> result = new List<User>();
 		int userCount = 0;
-		try
-		{
-			var sortBy = SortBy.Descending("Value");
-			if(count<1) throw new Exception();
-			MongoCursor<User> topUsers = users.FindAll().SetSortOrder(sortBy).SetLimit(count);
+		var sortBy = SortBy.Descending("HighScore");
+		if(count < 1) return new List<User>();
+		MongoCursor<User> topUsers = users.FindAll().SetSortOrder(sortBy).SetLimit(count);
 			foreach(User u in topUsers)
 			{
 				result.Add(u);
                 ++userCount;
 			}
-		}
-		catch(Exception e)
-		{
-			return null;
-		}
 		return result;
 	}
 
 	public void SubmitScore(string userName, int scoreValue)
 	{
-		try
+		var query = Query.EQ("Name", userName);
+		User u = users.FindOne(query);
+		if(u == null)
 		{
-			var query = Query.EQ("Name", userName);
-			User u = users.FindOne(query);
-			if(u == null)
-			{
-				User newUser = CreateUser(userName, scoreValue);
-				users.Insert(newUser);
-				SubmitScore(newUser.UserID, scoreValue);
-			}
-			else
-			{
-				SubmitScore(u.UserID, scoreValue);
-			}
-			//int count = 0;
-			//foreach(User u in users.Find(query))
-			//{
-			//	SubmitScore(u.UserID, scoreValue);
-			//	++count;
-			//}
-			//if(count == 0) 
-			//{
-			//	User u = CreateUser(userName, scoreValue);
-			//	users.Insert(u);
-			//	SubmitScore(u.UserID, scoreValue);
-			//}
+			User newUser = CreateUser(userName, scoreValue);
+			users.Insert(newUser);
+			SubmitScore(newUser.UserID, scoreValue);
 		}
-		catch(Exception e)
+		else
 		{
-			return;
+			SubmitScore(u.UserID, scoreValue);
 		}
-		return;
+	return;
 	}
 
 	public void SubmitScore(int userID, int scoreValue)
 	{
-		try
+		Score scoreObject = new Score {
+			UserID = userID,
+			Value = scoreValue
+		};
+		scores.Insert(scoreObject);
+		var query = Query.EQ("UserID", userID);
+		User u = users.FindOne(query);
+		if(u.HighScore < scoreValue)
 		{
-			Score scoreObject = new Score {
-				UserID = userID,
-				Value = scoreValue
-			};
-			scores.Insert(scoreObject);
-			var query = Query.EQ("UserID", userID);
-			User u = users.FindOne(query);
-			if(u.HighScore < scoreValue)
-			{
-				var update = Update.Set("HighScore", scoreValue);
-				var sort = SortBy.Descending("UserID");
-				users.FindAndModify(query, sort, update);
-			}
-		}
-		catch(Exception e)
-		{
-			return;
+			var update = Update.Set("HighScore", scoreValue);
+			var sort = SortBy.Descending("UserID");
+			users.FindAndModify(query, sort, update);
 		}
 		return;
+	
 	}
+	
 
 
 
@@ -194,11 +167,13 @@ public class Backend : MonoBehaviour {
 		mongoClient = new MongoClient("mongodb://127.0.0.1");
 		mongoServer = mongoClient.GetServer();
 		mongoServer.Connect();
+
 		database = mongoServer.GetDatabase("local");
 		if(database.CollectionExists("scores") == false) InitScores();
 		if(database.CollectionExists("users") == false) InitUsers();
 		scores = database.GetCollection<Score>("scores");
 		users = database.GetCollection<User>("users");
+		ConnectedToDB = true;
 		// Debug.Log(database.CollectionExists("scores").ToString());
 	}
 

@@ -382,7 +382,7 @@ MonoBehaviour:
     m_BestFit: 0
     m_MinSize: 10
     m_MaxSize: 40
-    m_Alignment: 1
+    m_Alignment: 0
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
@@ -516,17 +516,17 @@ Prefab:
     - target: {fileID: 224242559725471410, guid: 987ae2eb2e2071b4bbbfd63567d95d5f,
         type: 2}
       propertyPath: m_RootOrder
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 224217276150323582, guid: 987ae2eb2e2071b4bbbfd63567d95d5f,
         type: 2}
       propertyPath: m_RootOrder
-      value: 4
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 224925718125611324, guid: 987ae2eb2e2071b4bbbfd63567d95d5f,
         type: 2}
       propertyPath: m_RootOrder
-      value: 1
+      value: 4
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 987ae2eb2e2071b4bbbfd63567d95d5f, type: 2}

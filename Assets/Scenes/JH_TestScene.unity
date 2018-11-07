@@ -498,6 +498,85 @@ Prefab:
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 69dfd830d326d5241be2b405faa2bf87, type: 2}
   m_IsPrefabAsset: 0
+--- !u!1 &295293355
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 1540082089895646, guid: 688dfb6d7a9c0ac46a5f636e17fa05c0,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 295293356}
+  - component: {fileID: 295293358}
+  - component: {fileID: 295293357}
+  m_Layer: 0
+  m_Name: FinalScoreText
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &295293356
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 224392729682797232, guid: 688dfb6d7a9c0ac46a5f636e17fa05c0,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 295293355}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1379359307}
+  m_RootOrder: 20
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 102, y: 308.1}
+  m_SizeDelta: {x: 435, y: 96.6}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &295293357
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 114161176550882500, guid: 688dfb6d7a9c0ac46a5f636e17fa05c0,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 295293355}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.26755247, g: 0.2735849, b: 0.081301175, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_FontData:
+    m_Font: {fileID: 12800000, guid: ce2407306a1c62b4782353e5766e5251, type: 3}
+    m_FontSize: 25
+    m_FontStyle: 1
+    m_BestFit: 0
+    m_MinSize: 0
+    m_MaxSize: 60
+    m_Alignment: 0
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: 'Your final score was: '
+--- !u!222 &295293358
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 222641500719453518, guid: 688dfb6d7a9c0ac46a5f636e17fa05c0,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 295293355}
+  m_CullTransparentMesh: 0
 --- !u!1001 &354781835
 Prefab:
   m_ObjectHideFlags: 0
@@ -1704,6 +1783,11 @@ Prefab:
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 688dfb6d7a9c0ac46a5f636e17fa05c0, type: 2}
   m_IsPrefabAsset: 0
+--- !u!224 &1379359307 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 224054947260457900, guid: 688dfb6d7a9c0ac46a5f636e17fa05c0,
+    type: 2}
+  m_PrefabInternal: {fileID: 1379359306}
 --- !u!1 &1461077969 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1282379355755210, guid: eef3bcebbcfffd04f96918df8432d5a6,

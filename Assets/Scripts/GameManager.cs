@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour {
 
@@ -11,6 +11,8 @@ public class GameManager : MonoBehaviour {
 
 
     public int activeBall;
+    public float changeSceneAfterSeconds = -1;
+    public bool changeScene = false;
     public int currentScore = 0;
     public int totalScore = 0;
     public string playerName;
@@ -19,6 +21,7 @@ public class GameManager : MonoBehaviour {
     public GameObject[] balls;
     public GameObject launchSpawn;
     public GameObject backEndObject;
+    public Text finalScore;
     public Text scoreText;
     private Backend backEnd;
 
@@ -34,6 +37,8 @@ public class GameManager : MonoBehaviour {
 
     private void Start()
     {
+        changeSceneAfterSeconds = 0;
+        changeScene = false;
         if (!gameStarter)
             gameStarter = GameObject.Find("GameStarter").GetComponent<StartGame>();
         playerName = gameStarter.playerName;
@@ -51,6 +56,21 @@ public class GameManager : MonoBehaviour {
 
     private void Update()
     {
+        if(!finalScore){
+            finalScore = GameObject.Find("FinalScoreText").GetComponent<Text>();
+            if(finalScore) finalScore.text = "";
+        }
+        if(changeScene == true)
+        {   
+            changeSceneAfterSeconds -= Time.deltaTime;
+            if(changeSceneAfterSeconds < float.Epsilon)
+            {
+                finalScore.text = "";
+                changeScene = false;
+                changeSceneAfterSeconds = -1;
+                SceneManager.LoadScene(0);
+            }
+        }
         //  print("score = " + currentScore);
         scoreText.text = ("Score: " + currentScore.ToString());
     }
@@ -85,16 +105,19 @@ public class GameManager : MonoBehaviour {
         }
 
         else
+        {
             print("game end");
+        }
     }
 
 
     public void GameOver()
     {
         totalScore = currentScore;
-        backEnd.SubmitScore(playerName, totalScore);
-        print("game over, score: " + totalScore);
-
+        if(backEnd.ConnectedToDB == true) backEnd.SubmitScore(playerName, totalScore);
+        finalScore.text = "Your final score " + totalScore.ToString();
+        changeSceneAfterSeconds = 1;
+        changeScene = true;
     }
 
     public GameObject GetActiveBall()

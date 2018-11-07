@@ -8,7 +8,7 @@ public class StartGame : MonoBehaviour {
 
 
     private bool gameStarted = false;
-
+    private bool tryConnectionAgain = true;
 
     public InputField inputField;
     public Backend backEnd;
@@ -48,9 +48,23 @@ public class StartGame : MonoBehaviour {
         {
             inputField = GameObject.Find("MainMenuCanvas").GetComponentInChildren<InputField>();
         }
-        top10 = backEnd.GetTop(10);
-        ShowTopTen();
+        top10ListText.text = "Not connected yet..";
 	}
+
+    void UpdateTopTen()
+    {
+        if(backEnd.ConnectedToDB == true)
+        {
+            top10ListText.text = "";
+            top10 = backEnd.GetTop(10);
+            ShowTopTen();
+        } 
+    }
+
+    void Update()
+    {
+        if(top10 == null) UpdateTopTen();
+    }
 	
 
   /*  void LoadMainMenu()
@@ -89,11 +103,12 @@ public class StartGame : MonoBehaviour {
         {
             foreach (User user in top10)
             {
-                top10ListText.text += n + " " + (user.Name + " Score: " + user.HighScore + "\n"); //adds the number for each user, displays the name and score
+                top10ListText.text += n++ + " " + (user.Name + " Score: " + user.HighScore + "\n"); //adds the number for each user, displays the name and score
             }
         }
 
     }
+
     void NewGame()
     {
         SceneManager.LoadScene(0);
