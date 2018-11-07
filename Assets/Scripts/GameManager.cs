@@ -115,7 +115,7 @@ public class GameManager : MonoBehaviour {
     {
         totalScore = currentScore;
         if(backEnd.ConnectedToDB == true) backEnd.SubmitScore(playerName, totalScore);
-        finalScore.text = "Your final score " + totalScore.ToString();
+        finalScore.text = "Your final score: " + currentScore.ToString();
         changeSceneAfterSeconds = 1;
         changeScene = true;
     }

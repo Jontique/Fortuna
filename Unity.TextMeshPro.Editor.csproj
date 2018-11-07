@@ -29,7 +29,7 @@
     <IntermediateOutputPath>Temp\UnityVS_obj\Debug\</IntermediateOutputPath>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
-    <DefineConstants>DEBUG;TRACE;UNITY_5_3_OR_NEWER;UNITY_5_4_OR_NEWER;UNITY_5_5_OR_NEWER;UNITY_5_6_OR_NEWER;UNITY_2017_1_OR_NEWER;UNITY_2017_2_OR_NEWER;UNITY_2017_3_OR_NEWER;UNITY_2018_1_OR_NEWER;UNITY_2018_2_OR_NEWER;UNITY_2018_2_0;UNITY_2018_2;UNITY_2018;PLATFORM_ARCH_64;UNITY_64;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_DUCK_TYPING;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_SPRITES;ENABLE_GRID;ENABLE_TILEMAP;ENABLE_TERRAIN;ENABLE_TEXTURE_STREAMING;ENABLE_DIRECTOR;ENABLE_UNET;ENABLE_LZMA;ENABLE_UNITYEVENTS;ENABLE_WEBCAM;ENABLE_WWW;ENABLE_CLOUD_SERVICES_COLLAB;ENABLE_CLOUD_SERVICES_COLLAB_SOFTLOCKS;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_HUB;ENABLE_CLOUD_PROJECT_ID;ENABLE_CLOUD_SERVICES_USE_WEBREQUEST;ENABLE_CLOUD_SERVICES_UNET;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_CLOUD_LICENSE;ENABLE_EDITOR_HUB;ENABLE_EDITOR_HUB_LICENSE;ENABLE_WEBSOCKET_CLIENT;ENABLE_DIRECTOR_AUDIO;ENABLE_DIRECTOR_TEXTURE;ENABLE_TIMELINE;ENABLE_EDITOR_METRICS;ENABLE_EDITOR_METRICS_CACHING;ENABLE_MANAGED_JOBS;ENABLE_MANAGED_TRANSFORM_JOBS;ENABLE_MANAGED_ANIMATION_JOBS;INCLUDE_DYNAMIC_GI;INCLUDE_GI;ENABLE_MONO_BDWGC;PLATFORM_SUPPORTS_MONO;RENDER_SOFTWARE_CURSOR;INCLUDE_PUBNUB;ENABLE_VIDEO;ENABLE_PACKMAN;ENABLE_CUSTOM_RENDER_TEXTURE;ENABLE_LOCALIZATION;PLATFORM_STANDALONE_WIN;PLATFORM_STANDALONE;UNITY_STANDALONE_WIN;UNITY_STANDALONE;ENABLE_SUBSTANCE;ENABLE_RUNTIME_GI;ENABLE_MOVIES;ENABLE_NETWORK;ENABLE_CRUNCH_TEXTURE_COMPRESSION;ENABLE_UNITYWEBREQUEST;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_PURCHASING;ENABLE_CLOUD_SERVICES_CRASH_REPORTING;ENABLE_OUT_OF_PROCESS_CRASH_HANDLER;ENABLE_EVENT_QUEUE;ENABLE_CLUSTER_SYNC;ENABLE_CLUSTERINPUT;ENABLE_VR;ENABLE_AR;ENABLE_WEBSOCKET_HOST;ENABLE_MONO;NET_2_0_SUBSET;ENABLE_PROFILER;DEBUG;TRACE;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_WIN;ENABLE_UNITY_COLLECTIONS_CHECKS;ENABLE_BURST_AOT;UNITY_TEAM_LICENSE;ENABLE_VSTU</DefineConstants>
+    <DefineConstants>DEBUG;TRACE;UNITY_5_3_OR_NEWER;UNITY_5_4_OR_NEWER;UNITY_5_5_OR_NEWER;UNITY_5_6_OR_NEWER;UNITY_2017_1_OR_NEWER;UNITY_2017_2_OR_NEWER;UNITY_2017_3_OR_NEWER;UNITY_2018_1_OR_NEWER;UNITY_2018_2_OR_NEWER;UNITY_2018_2_0;UNITY_2018_2;UNITY_2018;PLATFORM_ARCH_64;UNITY_64;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_DUCK_TYPING;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_SPRITES;ENABLE_GRID;ENABLE_TILEMAP;ENABLE_TERRAIN;ENABLE_TEXTURE_STREAMING;ENABLE_DIRECTOR;ENABLE_UNET;ENABLE_LZMA;ENABLE_UNITYEVENTS;ENABLE_WEBCAM;ENABLE_WWW;ENABLE_CLOUD_SERVICES_COLLAB;ENABLE_CLOUD_SERVICES_COLLAB_SOFTLOCKS;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_HUB;ENABLE_CLOUD_PROJECT_ID;ENABLE_CLOUD_SERVICES_USE_WEBREQUEST;ENABLE_CLOUD_SERVICES_UNET;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_CLOUD_LICENSE;ENABLE_EDITOR_HUB;ENABLE_EDITOR_HUB_LICENSE;ENABLE_WEBSOCKET_CLIENT;ENABLE_DIRECTOR_AUDIO;ENABLE_DIRECTOR_TEXTURE;ENABLE_TIMELINE;ENABLE_EDITOR_METRICS;ENABLE_EDITOR_METRICS_CACHING;ENABLE_MANAGED_JOBS;ENABLE_MANAGED_TRANSFORM_JOBS;ENABLE_MANAGED_ANIMATION_JOBS;INCLUDE_DYNAMIC_GI;INCLUDE_GI;ENABLE_MONO_BDWGC;PLATFORM_SUPPORTS_MONO;RENDER_SOFTWARE_CURSOR;INCLUDE_PUBNUB;ENABLE_VIDEO;ENABLE_PACKMAN;ENABLE_CUSTOM_RENDER_TEXTURE;ENABLE_LOCALIZATION;PLATFORM_STANDALONE_WIN;PLATFORM_STANDALONE;UNITY_STANDALONE_WIN;UNITY_STANDALONE;ENABLE_SUBSTANCE;ENABLE_RUNTIME_GI;ENABLE_MOVIES;ENABLE_NETWORK;ENABLE_CRUNCH_TEXTURE_COMPRESSION;ENABLE_UNITYWEBREQUEST;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_PURCHASING;ENABLE_CLOUD_SERVICES_CRASH_REPORTING;ENABLE_OUT_OF_PROCESS_CRASH_HANDLER;ENABLE_EVENT_QUEUE;ENABLE_CLUSTER_SYNC;ENABLE_CLUSTERINPUT;ENABLE_VR;ENABLE_AR;ENABLE_WEBSOCKET_HOST;ENABLE_MONO;NET_2_0;ENABLE_PROFILER;DEBUG;TRACE;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_WIN;ENABLE_UNITY_COLLECTIONS_CHECKS;ENABLE_BURST_AOT;UNITY_TEAM_LICENSE;ENABLE_VSTU</DefineConstants>
     <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
@@ -39,7 +39,7 @@
     <IntermediateOutputPath>Temp\UnityVS_obj\Release\</IntermediateOutputPath>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
-    <DefineConstants>TRACE;UNITY_5_3_OR_NEWER;UNITY_5_4_OR_NEWER;UNITY_5_5_OR_NEWER;UNITY_5_6_OR_NEWER;UNITY_2017_1_OR_NEWER;UNITY_2017_2_OR_NEWER;UNITY_2017_3_OR_NEWER;UNITY_2018_1_OR_NEWER;UNITY_2018_2_OR_NEWER;UNITY_2018_2_0;UNITY_2018_2;UNITY_2018;PLATFORM_ARCH_64;UNITY_64;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_DUCK_TYPING;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_SPRITES;ENABLE_GRID;ENABLE_TILEMAP;ENABLE_TERRAIN;ENABLE_TEXTURE_STREAMING;ENABLE_DIRECTOR;ENABLE_UNET;ENABLE_LZMA;ENABLE_UNITYEVENTS;ENABLE_WEBCAM;ENABLE_WWW;ENABLE_CLOUD_SERVICES_COLLAB;ENABLE_CLOUD_SERVICES_COLLAB_SOFTLOCKS;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_HUB;ENABLE_CLOUD_PROJECT_ID;ENABLE_CLOUD_SERVICES_USE_WEBREQUEST;ENABLE_CLOUD_SERVICES_UNET;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_CLOUD_LICENSE;ENABLE_EDITOR_HUB;ENABLE_EDITOR_HUB_LICENSE;ENABLE_WEBSOCKET_CLIENT;ENABLE_DIRECTOR_AUDIO;ENABLE_DIRECTOR_TEXTURE;ENABLE_TIMELINE;ENABLE_EDITOR_METRICS;ENABLE_EDITOR_METRICS_CACHING;ENABLE_MANAGED_JOBS;ENABLE_MANAGED_TRANSFORM_JOBS;ENABLE_MANAGED_ANIMATION_JOBS;INCLUDE_DYNAMIC_GI;INCLUDE_GI;ENABLE_MONO_BDWGC;PLATFORM_SUPPORTS_MONO;RENDER_SOFTWARE_CURSOR;INCLUDE_PUBNUB;ENABLE_VIDEO;ENABLE_PACKMAN;ENABLE_CUSTOM_RENDER_TEXTURE;ENABLE_LOCALIZATION;PLATFORM_STANDALONE_WIN;PLATFORM_STANDALONE;UNITY_STANDALONE_WIN;UNITY_STANDALONE;ENABLE_SUBSTANCE;ENABLE_RUNTIME_GI;ENABLE_MOVIES;ENABLE_NETWORK;ENABLE_CRUNCH_TEXTURE_COMPRESSION;ENABLE_UNITYWEBREQUEST;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_PURCHASING;ENABLE_CLOUD_SERVICES_CRASH_REPORTING;ENABLE_OUT_OF_PROCESS_CRASH_HANDLER;ENABLE_EVENT_QUEUE;ENABLE_CLUSTER_SYNC;ENABLE_CLUSTERINPUT;ENABLE_VR;ENABLE_AR;ENABLE_WEBSOCKET_HOST;ENABLE_MONO;NET_2_0_SUBSET;ENABLE_PROFILER;DEBUG;TRACE;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_WIN;ENABLE_UNITY_COLLECTIONS_CHECKS;ENABLE_BURST_AOT;UNITY_TEAM_LICENSE;ENABLE_VSTU</DefineConstants>
+    <DefineConstants>TRACE;UNITY_5_3_OR_NEWER;UNITY_5_4_OR_NEWER;UNITY_5_5_OR_NEWER;UNITY_5_6_OR_NEWER;UNITY_2017_1_OR_NEWER;UNITY_2017_2_OR_NEWER;UNITY_2017_3_OR_NEWER;UNITY_2018_1_OR_NEWER;UNITY_2018_2_OR_NEWER;UNITY_2018_2_0;UNITY_2018_2;UNITY_2018;PLATFORM_ARCH_64;UNITY_64;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_DUCK_TYPING;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_SPRITES;ENABLE_GRID;ENABLE_TILEMAP;ENABLE_TERRAIN;ENABLE_TEXTURE_STREAMING;ENABLE_DIRECTOR;ENABLE_UNET;ENABLE_LZMA;ENABLE_UNITYEVENTS;ENABLE_WEBCAM;ENABLE_WWW;ENABLE_CLOUD_SERVICES_COLLAB;ENABLE_CLOUD_SERVICES_COLLAB_SOFTLOCKS;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_HUB;ENABLE_CLOUD_PROJECT_ID;ENABLE_CLOUD_SERVICES_USE_WEBREQUEST;ENABLE_CLOUD_SERVICES_UNET;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_CLOUD_LICENSE;ENABLE_EDITOR_HUB;ENABLE_EDITOR_HUB_LICENSE;ENABLE_WEBSOCKET_CLIENT;ENABLE_DIRECTOR_AUDIO;ENABLE_DIRECTOR_TEXTURE;ENABLE_TIMELINE;ENABLE_EDITOR_METRICS;ENABLE_EDITOR_METRICS_CACHING;ENABLE_MANAGED_JOBS;ENABLE_MANAGED_TRANSFORM_JOBS;ENABLE_MANAGED_ANIMATION_JOBS;INCLUDE_DYNAMIC_GI;INCLUDE_GI;ENABLE_MONO_BDWGC;PLATFORM_SUPPORTS_MONO;RENDER_SOFTWARE_CURSOR;INCLUDE_PUBNUB;ENABLE_VIDEO;ENABLE_PACKMAN;ENABLE_CUSTOM_RENDER_TEXTURE;ENABLE_LOCALIZATION;PLATFORM_STANDALONE_WIN;PLATFORM_STANDALONE;UNITY_STANDALONE_WIN;UNITY_STANDALONE;ENABLE_SUBSTANCE;ENABLE_RUNTIME_GI;ENABLE_MOVIES;ENABLE_NETWORK;ENABLE_CRUNCH_TEXTURE_COMPRESSION;ENABLE_UNITYWEBREQUEST;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_PURCHASING;ENABLE_CLOUD_SERVICES_CRASH_REPORTING;ENABLE_OUT_OF_PROCESS_CRASH_HANDLER;ENABLE_EVENT_QUEUE;ENABLE_CLUSTER_SYNC;ENABLE_CLUSTERINPUT;ENABLE_VR;ENABLE_AR;ENABLE_WEBSOCKET_HOST;ENABLE_MONO;NET_2_0;ENABLE_PROFILER;DEBUG;TRACE;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_WIN;ENABLE_UNITY_COLLECTIONS_CHECKS;ENABLE_BURST_AOT;UNITY_TEAM_LICENSE;ENABLE_VSTU</DefineConstants>
     <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
   </PropertyGroup>
   <ItemGroup>
@@ -318,6 +318,252 @@
     <Reference Include="SyntaxTree.VisualStudio.Unity.Bridge">
       <HintPath>C:/Program Files (x86)/Microsoft Visual Studio Tools for Unity/15.0/Editor/SyntaxTree.VisualStudio.Unity.Bridge.dll</HintPath>
     </Reference>
+    <Reference Include="MongoDB.Driver">
+      <HintPath>Assets/Fortuna_build/Fortuna by Joni and Matti_Data/Managed/MongoDB.Driver.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityWebRequestAudioModule">
+      <HintPath>Assets/Fortuna_build/Fortuna by Joni and Matti_Data/Managed/UnityEngine.UnityWebRequestAudioModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.CoreModule">
+      <HintPath>Assets/Fortuna_build/Fortuna by Joni and Matti_Data/Managed/UnityEngine.CoreModule.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security">
+      <HintPath>Assets/Fortuna_build/Fortuna by Joni and Matti_Data/Managed/System.Security.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Drawing">
+      <HintPath>Assets/Fortuna_build/Fortuna by Joni and Matti_Data/Managed/System.Drawing.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AudioModule">
+      <HintPath>Assets/Fortuna_build/Fortuna by Joni and Matti_Data/Managed/UnityEngine.AudioModule.dll</HintPath>
+    </Reference>
+    <Reference Include="WindowsBase">
+      <HintPath>Assets/Fortuna_build/Fortuna by Joni and Matti_Data/Managed/WindowsBase.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Core">
+      <HintPath>Assets/Fortuna_build/Fortuna by Joni and Matti_Data/Managed/System.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Mono.Data.Tds">
+      <HintPath>Assets/Fortuna_build/Fortuna by Joni and Matti_Data/Managed/Mono.Data.Tds.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.SubstanceModule">
+      <HintPath>Assets/Fortuna_build/Fortuna by Joni and Matti_Data/Managed/UnityEngine.SubstanceModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.JSONSerializeModule">
+      <HintPath>Assets/Fortuna_build/Fortuna by Joni and Matti_Data/Managed/UnityEngine.JSONSerializeModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.GameCenterModule">
+      <HintPath>Assets/Fortuna_build/Fortuna by Joni and Matti_Data/Managed/UnityEngine.GameCenterModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.PhysicsModule">
+      <HintPath>Assets/Fortuna_build/Fortuna by Joni and Matti_Data/Managed/UnityEngine.PhysicsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityWebRequestAssetBundleModule">
+      <HintPath>Assets/Fortuna_build/Fortuna by Joni and Matti_Data/Managed/UnityEngine.UnityWebRequestAssetBundleModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.PerformanceReportingModule">
+      <HintPath>Assets/Fortuna_build/Fortuna by Joni and Matti_Data/Managed/UnityEngine.PerformanceReportingModule.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml">
+      <HintPath>Assets/Fortuna_build/Fortuna by Joni and Matti_Data/Managed/System.Xml.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.TextMeshPro">
+      <HintPath>Assets/Fortuna_build/Fortuna by Joni and Matti_Data/Managed/Unity.TextMeshPro.dll</HintPath>
+    </Reference>
+    <Reference Include="Assembly-CSharp">
+      <HintPath>Assets/Fortuna_build/Fortuna by Joni and Matti_Data/Managed/Assembly-CSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.SpriteMaskModule">
+      <HintPath>Assets/Fortuna_build/Fortuna by Joni and Matti_Data/Managed/UnityEngine.SpriteMaskModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityConnectModule">
+      <HintPath>Assets/Fortuna_build/Fortuna by Joni and Matti_Data/Managed/UnityEngine.UnityConnectModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AIModule">
+      <HintPath>Assets/Fortuna_build/Fortuna by Joni and Matti_Data/Managed/UnityEngine.AIModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UI">
+      <HintPath>Assets/Fortuna_build/Fortuna by Joni and Matti_Data/Managed/UnityEngine.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.WindModule">
+      <HintPath>Assets/Fortuna_build/Fortuna by Joni and Matti_Data/Managed/UnityEngine.WindModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ImageConversionModule">
+      <HintPath>Assets/Fortuna_build/Fortuna by Joni and Matti_Data/Managed/UnityEngine.ImageConversionModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ParticleSystemModule">
+      <HintPath>Assets/Fortuna_build/Fortuna by Joni and Matti_Data/Managed/UnityEngine.ParticleSystemModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.VRModule">
+      <HintPath>Assets/Fortuna_build/Fortuna by Joni and Matti_Data/Managed/UnityEngine.VRModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityWebRequestModule">
+      <HintPath>Assets/Fortuna_build/Fortuna by Joni and Matti_Data/Managed/UnityEngine.UnityWebRequestModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.DirectorModule">
+      <HintPath>Assets/Fortuna_build/Fortuna by Joni and Matti_Data/Managed/UnityEngine.DirectorModule.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Configuration">
+      <HintPath>Assets/Fortuna_build/Fortuna by Joni and Matti_Data/Managed/System.Configuration.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.Networking">
+      <HintPath>Assets/Fortuna_build/Fortuna by Joni and Matti_Data/Managed/UnityEngine.Networking.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ClothModule">
+      <HintPath>Assets/Fortuna_build/Fortuna by Joni and Matti_Data/Managed/UnityEngine.ClothModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.CloudWebServicesModule">
+      <HintPath>Assets/Fortuna_build/Fortuna by Joni and Matti_Data/Managed/UnityEngine.CloudWebServicesModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.FileSystemHttpModule">
+      <HintPath>Assets/Fortuna_build/Fortuna by Joni and Matti_Data/Managed/UnityEngine.FileSystemHttpModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.XRModule">
+      <HintPath>Assets/Fortuna_build/Fortuna by Joni and Matti_Data/Managed/UnityEngine.XRModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine">
+      <HintPath>Assets/Fortuna_build/Fortuna by Joni and Matti_Data/Managed/UnityEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TerrainPhysicsModule">
+      <HintPath>Assets/Fortuna_build/Fortuna by Joni and Matti_Data/Managed/UnityEngine.TerrainPhysicsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.FacebookModule">
+      <HintPath>Assets/Fortuna_build/Fortuna by Joni and Matti_Data/Managed/UnityEngine.FacebookModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityWebRequestWWWModule">
+      <HintPath>Assets/Fortuna_build/Fortuna by Joni and Matti_Data/Managed/UnityEngine.UnityWebRequestWWWModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.StyleSheetsModule">
+      <HintPath>Assets/Fortuna_build/Fortuna by Joni and Matti_Data/Managed/UnityEngine.StyleSheetsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data">
+      <HintPath>Assets/Fortuna_build/Fortuna by Joni and Matti_Data/Managed/System.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ClusterRendererModule">
+      <HintPath>Assets/Fortuna_build/Fortuna by Joni and Matti_Data/Managed/UnityEngine.ClusterRendererModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.SpriteShapeModule">
+      <HintPath>Assets/Fortuna_build/Fortuna by Joni and Matti_Data/Managed/UnityEngine.SpriteShapeModule.dll</HintPath>
+    </Reference>
+    <Reference Include="Mono.Posix">
+      <HintPath>Assets/Fortuna_build/Fortuna by Joni and Matti_Data/Managed/Mono.Posix.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UNETModule">
+      <HintPath>Assets/Fortuna_build/Fortuna by Joni and Matti_Data/Managed/UnityEngine.UNETModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TimelineModule">
+      <HintPath>Assets/Fortuna_build/Fortuna by Joni and Matti_Data/Managed/UnityEngine.TimelineModule.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Transactions">
+      <HintPath>Assets/Fortuna_build/Fortuna by Joni and Matti_Data/Managed/System.Transactions.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ScreenCaptureModule">
+      <HintPath>Assets/Fortuna_build/Fortuna by Joni and Matti_Data/Managed/UnityEngine.ScreenCaptureModule.dll</HintPath>
+    </Reference>
+    <Reference Include="MongoDB.Bson">
+      <HintPath>Assets/Fortuna_build/Fortuna by Joni and Matti_Data/Managed/MongoDB.Bson.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ARModule">
+      <HintPath>Assets/Fortuna_build/Fortuna by Joni and Matti_Data/Managed/UnityEngine.ARModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ProfilerModule">
+      <HintPath>Assets/Fortuna_build/Fortuna by Joni and Matti_Data/Managed/UnityEngine.ProfilerModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.LocalizationModule">
+      <HintPath>Assets/Fortuna_build/Fortuna by Joni and Matti_Data/Managed/UnityEngine.LocalizationModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.Timeline">
+      <HintPath>Assets/Fortuna_build/Fortuna by Joni and Matti_Data/Managed/UnityEngine.Timeline.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.Physics2DModule">
+      <HintPath>Assets/Fortuna_build/Fortuna by Joni and Matti_Data/Managed/UnityEngine.Physics2DModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.VehiclesModule">
+      <HintPath>Assets/Fortuna_build/Fortuna by Joni and Matti_Data/Managed/UnityEngine.VehiclesModule.dll</HintPath>
+    </Reference>
+    <Reference Include="System.EnterpriseServices">
+      <HintPath>Assets/Fortuna_build/Fortuna by Joni and Matti_Data/Managed/System.EnterpriseServices.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.CrashReportingModule">
+      <HintPath>Assets/Fortuna_build/Fortuna by Joni and Matti_Data/Managed/UnityEngine.CrashReportingModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityAnalyticsModule">
+      <HintPath>Assets/Fortuna_build/Fortuna by Joni and Matti_Data/Managed/UnityEngine.UnityAnalyticsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AssetBundleModule">
+      <HintPath>Assets/Fortuna_build/Fortuna by Joni and Matti_Data/Managed/UnityEngine.AssetBundleModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.SharedInternalsModule">
+      <HintPath>Assets/Fortuna_build/Fortuna by Joni and Matti_Data/Managed/UnityEngine.SharedInternalsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TLSModule">
+      <HintPath>Assets/Fortuna_build/Fortuna by Joni and Matti_Data/Managed/UnityEngine.TLSModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityWebRequestTextureModule">
+      <HintPath>Assets/Fortuna_build/Fortuna by Joni and Matti_Data/Managed/UnityEngine.UnityWebRequestTextureModule.dll</HintPath>
+    </Reference>
+    <Reference Include="System">
+      <HintPath>Assets/Fortuna_build/Fortuna by Joni and Matti_Data/Managed/System.dll</HintPath>
+    </Reference>
+    <Reference Include="mscorlib">
+      <HintPath>Assets/Fortuna_build/Fortuna by Joni and Matti_Data/Managed/mscorlib.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.HotReloadModule">
+      <HintPath>Assets/Fortuna_build/Fortuna by Joni and Matti_Data/Managed/UnityEngine.HotReloadModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.IMGUIModule">
+      <HintPath>Assets/Fortuna_build/Fortuna by Joni and Matti_Data/Managed/UnityEngine.IMGUIModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UmbraModule">
+      <HintPath>Assets/Fortuna_build/Fortuna by Joni and Matti_Data/Managed/UnityEngine.UmbraModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.VideoModule">
+      <HintPath>Assets/Fortuna_build/Fortuna by Joni and Matti_Data/Managed/UnityEngine.VideoModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AccessibilityModule">
+      <HintPath>Assets/Fortuna_build/Fortuna by Joni and Matti_Data/Managed/UnityEngine.AccessibilityModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UIModule">
+      <HintPath>Assets/Fortuna_build/Fortuna by Joni and Matti_Data/Managed/UnityEngine.UIModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.BaselibModule">
+      <HintPath>Assets/Fortuna_build/Fortuna by Joni and Matti_Data/Managed/UnityEngine.BaselibModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TextRenderingModule">
+      <HintPath>Assets/Fortuna_build/Fortuna by Joni and Matti_Data/Managed/UnityEngine.TextRenderingModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ClusterInputModule">
+      <HintPath>Assets/Fortuna_build/Fortuna by Joni and Matti_Data/Managed/UnityEngine.ClusterInputModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.StreamingModule">
+      <HintPath>Assets/Fortuna_build/Fortuna by Joni and Matti_Data/Managed/UnityEngine.StreamingModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UIElementsModule">
+      <HintPath>Assets/Fortuna_build/Fortuna by Joni and Matti_Data/Managed/UnityEngine.UIElementsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AnimationModule">
+      <HintPath>Assets/Fortuna_build/Fortuna by Joni and Matti_Data/Managed/UnityEngine.AnimationModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ParticlesLegacyModule">
+      <HintPath>Assets/Fortuna_build/Fortuna by Joni and Matti_Data/Managed/UnityEngine.ParticlesLegacyModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TerrainModule">
+      <HintPath>Assets/Fortuna_build/Fortuna by Joni and Matti_Data/Managed/UnityEngine.TerrainModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.SpatialTracking">
+      <HintPath>Assets/Fortuna_build/Fortuna by Joni and Matti_Data/Managed/UnityEngine.SpatialTracking.dll</HintPath>
+    </Reference>
+    <Reference Include="Mono.Security">
+      <HintPath>Assets/Fortuna_build/Fortuna by Joni and Matti_Data/Managed/Mono.Security.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.GridModule">
+      <HintPath>Assets/Fortuna_build/Fortuna by Joni and Matti_Data/Managed/UnityEngine.GridModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TilemapModule">
+      <HintPath>Assets/Fortuna_build/Fortuna by Joni and Matti_Data/Managed/UnityEngine.TilemapModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.InputModule">
+      <HintPath>Assets/Fortuna_build/Fortuna by Joni and Matti_Data/Managed/UnityEngine.InputModule.dll</HintPath>
+    </Reference>
     <Reference Include="mscorlib">
       <HintPath>D:\Unity versions\2018.2.0b8\Editor\Data\MonoBleedingEdge\lib\mono\2.0-api\mscorlib.dll</HintPath>
     </Reference>
@@ -396,6 +642,67 @@
   <ItemGroup>
     <None Include="Assets\Drivers\unity-mongo-csharp-driver-1.11.0-release\MongoDB.Bson.xml" />
     <None Include="Assets\Drivers\unity-mongo-csharp-driver-1.11.0-release\MongoDB.Driver.XML" />
+    <None Include="Assets\Fortuna_build\Fortuna by Joni and Matti_Data\Managed\UnityEngine.AIModule.xml" />
+    <None Include="Assets\Fortuna_build\Fortuna by Joni and Matti_Data\Managed\UnityEngine.ARModule.xml" />
+    <None Include="Assets\Fortuna_build\Fortuna by Joni and Matti_Data\Managed\UnityEngine.AccessibilityModule.xml" />
+    <None Include="Assets\Fortuna_build\Fortuna by Joni and Matti_Data\Managed\UnityEngine.AnimationModule.xml" />
+    <None Include="Assets\Fortuna_build\Fortuna by Joni and Matti_Data\Managed\UnityEngine.AssetBundleModule.xml" />
+    <None Include="Assets\Fortuna_build\Fortuna by Joni and Matti_Data\Managed\UnityEngine.AudioModule.xml" />
+    <None Include="Assets\Fortuna_build\Fortuna by Joni and Matti_Data\Managed\UnityEngine.BaselibModule.xml" />
+    <None Include="Assets\Fortuna_build\Fortuna by Joni and Matti_Data\Managed\UnityEngine.ClothModule.xml" />
+    <None Include="Assets\Fortuna_build\Fortuna by Joni and Matti_Data\Managed\UnityEngine.CloudWebServicesModule.xml" />
+    <None Include="Assets\Fortuna_build\Fortuna by Joni and Matti_Data\Managed\UnityEngine.ClusterInputModule.xml" />
+    <None Include="Assets\Fortuna_build\Fortuna by Joni and Matti_Data\Managed\UnityEngine.ClusterRendererModule.xml" />
+    <None Include="Assets\Fortuna_build\Fortuna by Joni and Matti_Data\Managed\UnityEngine.CoreModule.xml" />
+    <None Include="Assets\Fortuna_build\Fortuna by Joni and Matti_Data\Managed\UnityEngine.CrashReportingModule.xml" />
+    <None Include="Assets\Fortuna_build\Fortuna by Joni and Matti_Data\Managed\UnityEngine.DirectorModule.xml" />
+    <None Include="Assets\Fortuna_build\Fortuna by Joni and Matti_Data\Managed\UnityEngine.FacebookModule.xml" />
+    <None Include="Assets\Fortuna_build\Fortuna by Joni and Matti_Data\Managed\UnityEngine.FileSystemHttpModule.xml" />
+    <None Include="Assets\Fortuna_build\Fortuna by Joni and Matti_Data\Managed\UnityEngine.GameCenterModule.xml" />
+    <None Include="Assets\Fortuna_build\Fortuna by Joni and Matti_Data\Managed\UnityEngine.GridModule.xml" />
+    <None Include="Assets\Fortuna_build\Fortuna by Joni and Matti_Data\Managed\UnityEngine.HotReloadModule.xml" />
+    <None Include="Assets\Fortuna_build\Fortuna by Joni and Matti_Data\Managed\UnityEngine.IMGUIModule.xml" />
+    <None Include="Assets\Fortuna_build\Fortuna by Joni and Matti_Data\Managed\UnityEngine.ImageConversionModule.xml" />
+    <None Include="Assets\Fortuna_build\Fortuna by Joni and Matti_Data\Managed\UnityEngine.InputModule.xml" />
+    <None Include="Assets\Fortuna_build\Fortuna by Joni and Matti_Data\Managed\UnityEngine.JSONSerializeModule.xml" />
+    <None Include="Assets\Fortuna_build\Fortuna by Joni and Matti_Data\Managed\UnityEngine.LocalizationModule.xml" />
+    <None Include="Assets\Fortuna_build\Fortuna by Joni and Matti_Data\Managed\UnityEngine.ParticleSystemModule.xml" />
+    <None Include="Assets\Fortuna_build\Fortuna by Joni and Matti_Data\Managed\UnityEngine.ParticlesLegacyModule.xml" />
+    <None Include="Assets\Fortuna_build\Fortuna by Joni and Matti_Data\Managed\UnityEngine.PerformanceReportingModule.xml" />
+    <None Include="Assets\Fortuna_build\Fortuna by Joni and Matti_Data\Managed\UnityEngine.Physics2DModule.xml" />
+    <None Include="Assets\Fortuna_build\Fortuna by Joni and Matti_Data\Managed\UnityEngine.PhysicsModule.xml" />
+    <None Include="Assets\Fortuna_build\Fortuna by Joni and Matti_Data\Managed\UnityEngine.ProfilerModule.xml" />
+    <None Include="Assets\Fortuna_build\Fortuna by Joni and Matti_Data\Managed\UnityEngine.ScreenCaptureModule.xml" />
+    <None Include="Assets\Fortuna_build\Fortuna by Joni and Matti_Data\Managed\UnityEngine.SharedInternalsModule.xml" />
+    <None Include="Assets\Fortuna_build\Fortuna by Joni and Matti_Data\Managed\UnityEngine.SpriteMaskModule.xml" />
+    <None Include="Assets\Fortuna_build\Fortuna by Joni and Matti_Data\Managed\UnityEngine.SpriteShapeModule.xml" />
+    <None Include="Assets\Fortuna_build\Fortuna by Joni and Matti_Data\Managed\UnityEngine.StreamingModule.xml" />
+    <None Include="Assets\Fortuna_build\Fortuna by Joni and Matti_Data\Managed\UnityEngine.StyleSheetsModule.xml" />
+    <None Include="Assets\Fortuna_build\Fortuna by Joni and Matti_Data\Managed\UnityEngine.SubstanceModule.xml" />
+    <None Include="Assets\Fortuna_build\Fortuna by Joni and Matti_Data\Managed\UnityEngine.TLSModule.xml" />
+    <None Include="Assets\Fortuna_build\Fortuna by Joni and Matti_Data\Managed\UnityEngine.TerrainModule.xml" />
+    <None Include="Assets\Fortuna_build\Fortuna by Joni and Matti_Data\Managed\UnityEngine.TerrainPhysicsModule.xml" />
+    <None Include="Assets\Fortuna_build\Fortuna by Joni and Matti_Data\Managed\UnityEngine.TextRenderingModule.xml" />
+    <None Include="Assets\Fortuna_build\Fortuna by Joni and Matti_Data\Managed\UnityEngine.TilemapModule.xml" />
+    <None Include="Assets\Fortuna_build\Fortuna by Joni and Matti_Data\Managed\UnityEngine.TimelineModule.xml" />
+    <None Include="Assets\Fortuna_build\Fortuna by Joni and Matti_Data\Managed\UnityEngine.UIElementsModule.xml" />
+    <None Include="Assets\Fortuna_build\Fortuna by Joni and Matti_Data\Managed\UnityEngine.UIModule.xml" />
+    <None Include="Assets\Fortuna_build\Fortuna by Joni and Matti_Data\Managed\UnityEngine.UNETModule.xml" />
+    <None Include="Assets\Fortuna_build\Fortuna by Joni and Matti_Data\Managed\UnityEngine.UmbraModule.xml" />
+    <None Include="Assets\Fortuna_build\Fortuna by Joni and Matti_Data\Managed\UnityEngine.UnityAnalyticsModule.xml" />
+    <None Include="Assets\Fortuna_build\Fortuna by Joni and Matti_Data\Managed\UnityEngine.UnityConnectModule.xml" />
+    <None Include="Assets\Fortuna_build\Fortuna by Joni and Matti_Data\Managed\UnityEngine.UnityWebRequestAssetBundleModule.xml" />
+    <None Include="Assets\Fortuna_build\Fortuna by Joni and Matti_Data\Managed\UnityEngine.UnityWebRequestAudioModule.xml" />
+    <None Include="Assets\Fortuna_build\Fortuna by Joni and Matti_Data\Managed\UnityEngine.UnityWebRequestModule.xml" />
+    <None Include="Assets\Fortuna_build\Fortuna by Joni and Matti_Data\Managed\UnityEngine.UnityWebRequestTextureModule.xml" />
+    <None Include="Assets\Fortuna_build\Fortuna by Joni and Matti_Data\Managed\UnityEngine.UnityWebRequestWWWModule.xml" />
+    <None Include="Assets\Fortuna_build\Fortuna by Joni and Matti_Data\Managed\UnityEngine.VRModule.xml" />
+    <None Include="Assets\Fortuna_build\Fortuna by Joni and Matti_Data\Managed\UnityEngine.VehiclesModule.xml" />
+    <None Include="Assets\Fortuna_build\Fortuna by Joni and Matti_Data\Managed\UnityEngine.VideoModule.xml" />
+    <None Include="Assets\Fortuna_build\Fortuna by Joni and Matti_Data\Managed\UnityEngine.WindModule.xml" />
+    <None Include="Assets\Fortuna_build\Fortuna by Joni and Matti_Data\Managed\UnityEngine.XRModule.xml" />
+    <None Include="Assets\Fortuna_build\Fortuna by Joni and Matti_Data\Managed\UnityEngine.xml" />
+    <None Include="Assets\Fortuna_build\Mono\etc\mono\mconfig\config.xml" />
     <None Include="Assets\TextMesh Pro\Resources\LineBreaking Following Characters.txt" />
     <None Include="Assets\TextMesh Pro\Resources\LineBreaking Leading Characters.txt" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_Bitmap-Custom-Atlas.shader" />
